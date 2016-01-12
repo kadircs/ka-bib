@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{texnames}
+
+\usepackage{url}
+\usepackage{color}
+\usepackage{graphicx}
+
+\definecolor{hotpink}{rgb}{0.9,0,0.5}
+
+\usepackage[colorlinks,urlcolor=blue,citecolor=hotpink,linkcolor=blue]{hyperref}
+
+\title{Bibliography \texttt{ka.bib}}
+\author{Kadir Akbudak%
+        \thanks{%
+                (\texttt{kadir.cs@gmail.com},
+                \url{https://sites.google.com/site/kadircs/})
+               }
+}
+% \date{}
+
+\begin{document}
+\maketitle
+Blue denotes clickable links.
+
+% This bibliography, and most of the papers dated 1990 onwards,
+% are available by anonymous FTP from the machine at Internet address
+% 130.88.16.10, in directory {\tt pub/higham}.
+
+\nocite{*}
+
+% \bibliographystyle{is-plain}
+\bibliographystyle{myplain2-doi}
+% \bibliographystyle{abbrv}
+\bibliography{strings,ka}
+
+\end{document}
